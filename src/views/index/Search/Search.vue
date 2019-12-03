@@ -1,0 +1,88 @@
+<template>
+  <div class="search">
+    <div class="search-locWrapper">
+      <div class="search-locWrapper_location">广东石油化工学院</div>
+    </div>
+    <div class="search-inputWrapper">
+      <i class="search-inputWrapper_icon"></i>
+      <input class="search-inputWrapper_input" type="text" placeholder="请输入商家或商品名称">
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Search',
+  data () {
+    return {
+      isReachNav: false
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+  .search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    z-index: 2;
+    background: #1C1B20;
+  }
+  .search-locWrapper {
+    max-width: 200px;
+  }
+  .search-locWrapper_location {
+    font-size: 16px;
+    color: #fff;
+  }
+  .search-locWrapper_location:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAppJREFUSA3FlzFPFFEUhXck0mBhLEhw6SykI9Q0Uiok2lBbqdEQpKWzING/gD8AawoqDTExkdLKSEQqFRstNDbKmvU7s++SO883+2Z3Cm9y9t737jnnzuzszux2Ov8piqZz+/3+LNybYBlcAZeB4gQcgz2wWxTFJ3L7YOAMeAp6IBfiiDvTajIGK+AHGDWkWRlrOMI18Cea+IL1HXAVXAhQrT31fEi7NtJwBDpTP/SI9bWciThAXAt5NDtziLqm301JfgUu5YZaX9ygIZUhr/w1h7Q94JevH3htPDQaLq3FtvWSGVYXnBqbvBQT2ZsFO+AkQLW+apVgbwlYyLNbIfgFzQfGJO/7nmr2NPSb41ipvdTwfSOQ78d+Z2uae45496wRCno6u7rYSfDvObJuMOmAdOiIczGLnt7eutAdrBIQ5xz50DfP+QW13Qa1/TnqjbP0Ht67Ew/uOfdJV1v50opETvW8x2lCM9jibTlwb81iTKQ36odr0fkdeL/4jN+55nVXl2V48syzeAa+BKier3kqeQ/vjcQFR7fsjvAjdXxgjj28lBbIw0KP03TAmAD+k7uaZuZ38Vm1icFzYqgK0pYTvKc+P1SQaEoDjpzPVoJW3YJ8Efi703qVkV+hX3dDv8ozr4IBccMJf1Lrp06jEBdIY7HRSCgSiknw1pTk12D4NRro9BkR10Ie/rucPwYEC+C3OZAf51Rwnji+tAs5TbKPcNMZqbydJLKpngguNuu42X1M9F3cdWa/qG/EQu0B9SykGfseUPpjMAXemCNZA27ZcNVhj1SGuFPWb5Ux0j36uLQdvPRIjwJUW4jzzw+CtsO7mPrntQ2zrF79z5s20zGeBs9tksvam27jndUyoAAPgR4AgurG/8FswF+AQn0Q4NtYewAAAABJRU5ErkJggg==") no-repeat;
+    background-size: contain;
+  }
+  .search-locWrapper_location:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 15px 0 5px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAJ1JREFUOBHtkkEKwjAQRTMWN9FLlHoQr+wFpLSnsJtScO/WXXwDWSUSmIB2kw+PUNp5Gabj3L8SQhA4WO8rFdyRLUgvFmlJ+EI0wGiVfm0AiQeVaZ5g6rRJ8wkww5/M9IR4As0bjunVpbVJv9VngS6+CPGsO+jmDDNoNujrTFRR3GQV02NuN9CYfkBpbTx9POAqImtFT3kJ3ene7ZsPLHfnp+4NdnkAAAAASUVORK5CYII=") no-repeat;
+    background-size: contain;
+  }
+  .search-inputWrapper {
+    flex: 1;
+    position: relative;
+    font-size: 13px;
+  }
+  .search-inputWrapper_input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    background: #ebebe4;
+  }
+  .search-inputWrapper_icon {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA3VJREFUSA3tlktIVFEYx52XVhNkbRrHomkzIUSQzigi1IDZiyICFSEEXfXYVxAYE9U2aFFoEL0WEREZSItcaNEwPjPaFFE65ThKWJvGmkej/b6Ze4eZO3dyUtqEB879zvnO//v/z/nuPefcoqKV8r9nwFDoAr1er7Gnp6cW/IGFhYWtWJvBYAhjQ/QHTCZTz9DQ0NdC+RYVbmpqMk1MTLRB6EVgUz5iJpFg7L7ZbO4YGBgI5MOp/j8K19XV2aPR6GMEq5WAD9huo9H4GjuDfy11C6L7sfX4iqlRxk8ODw/fop235BWurq52JhKJPiLt1AD1zOjo6EOsbnG73ZsRv0xtVQAXwZ/XBePUFfZ4PKXhcHgQEieYvuLi4ka/3/8tH0mmnwm0z8/Pd+GzUNsQv5M5rraNaiPTInpFREnhGP5DhYoKh6SYuBPSxnZKJqStLSatw+VybUe0E3+cd7V7ZGTkixazWD8UCo2Vl5dvg2cndf309PQTbYzeio8DMjLbLmY/rg0otM/XfQ6OX+CPVVVVrdPG6QkfERAzva0F/01f2VLPibEwgYPa2Cxh3ocNQXkns3wUr7TgJfSfKTFubWyWMF+jbB0pn1NmeU9W+klhUHnThFnCeNcoIz/SiOU1VB6VN82WJcx+nVFGbGnE8hpJHl6fyptmyxIuKSkJMhIjRY7a2toNadQSGwhWKqE5uyNLuL+/PwKwjwBzLBY7vES9ZJhcLvAkdwhb66mWK0tYBjk0HiigsxKsDSi0Pz4+3g62jPpucHDwjTYuR9hqtd4j1e8BVhB8WhtQSF9uNTguCRbboRdj0HNyM+3jZkqmh8Bmjs1Hejg9n3LB9JJmF7G9xO7Vw+mmcmpq6qPdbo8S0EBt5NxNOJ1OfyAQmNcjUX01NTU7IpHIC/oV1Fl2iScYDP5UxzOtrrAAONh9CMo+3EOtj8fjLfSjDocjODk5OScYKfId8Hp2lZWVXeAAuo6rlNUusNpVZG0OHplITtFNdSaK26oBnqv4ZBVSZNXT1BnI5Q9EfoesVCmyFa9hx/DfxMo35OX4Tb5v2umyqLAgZVWkuQWyZroykdVphlTjLabbYrHcUP+3mLDg7+IXcQ/iL1PQ1LMg4cwAPh4z/2EbSauNVIY5dEI+n+97JkZtV1ZWHiUDrWzRU1yxOaeXilux/zQDvwFiGVdw0BGAOQAAAABJRU5ErkJggg==") no-repeat;
+    background-size: contain;
+  }
+</style>

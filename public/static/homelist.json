@@ -1,0 +1,428 @@
+{
+  "data": {
+    "poiTotalNum": 0,
+    "poiHasNextPage": true,
+    "nextStartIndex": 1,
+    "shopList": [{
+      "mtWmPoiId": "995578908806027",
+      "shopName": "大师兄便当（学院店）",
+      "wmPoiScore": 44,
+      "monthSalesTip": "月售4000",
+      "picUrl": "http://p1.meituan.net/business/5daff6cb959fb747f0ad27341e65cbc1984442.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "25分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥0",
+      "shippingFeeTip": "配送 ¥0",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "1.4km",
+      "averagePriceTip": "",
+      "discounts2": [{
+        "info": "满5减1;满10减2;满15减3;满20减4;",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "文明北路216、218号首层6号房",
+      "shipping_time": "10:05-12:51,16:15-18:50"
+    }, {
+      "mtWmPoiId": "1075877617369290",
+      "shopName": "绿岛村美食",
+      "wmPoiScore": 44,
+      "monthSalesTip": "月售2014",
+      "picUrl": "http://p1.meituan.net/waimaipoi/1803f20d918fdcee5945d01f9ce334c8538423.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "50分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥1",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "3.6km",
+      "averagePriceTip": "",
+      "discounts2": [{
+        "info": "满5减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "茂名市文明北路茂名职业技术学院6#楼商业铺位第6、7号",
+      "shipping_time": "10:00-13:00,15:25-18:50"
+    }, {
+      "mtWmPoiId": "883660651017523",
+      "shopName": "陈氏蒸汤",
+      "wmPoiScore": 40,
+      "monthSalesTip": "月售2010",
+      "picUrl": "http://p0.meituan.net/waimaipoi/9452105d4496ec354dd5f8fae75ec35424576.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "34分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥5",
+      "shippingFeeTip": "配送 ¥0",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "5.4km",
+      "averagePriceTip": "",
+      "discounts2": [{
+        "info": "满10减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "官渡北供气站2栋A8号铺",
+      "shipping_time": "09:00-19:00"
+    }, {
+      "mtWmPoiId": "957611397877071",
+      "shopName": "华乐士",
+      "wmPoiScore": 44,
+      "monthSalesTip": "月售2100",
+      "picUrl": "http://p0.meituan.net/waimaipoi/4aa4ed84eca1dc1d062b6cf89c1ff3be36864.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "32分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥0",
+      "shippingFeeTip": "配送 ¥0",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "6.2km",
+      "averagePriceTip": "人均 ¥15",
+      "discounts2": [{
+        "info": "折扣商品5.4折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }],
+      "address": "茂名市光华北路638号大院8、9号首层11号房",
+      "shipping_time": "10:30-23:30"
+    }, {
+      "mtWmPoiId": "1034156305079776",
+      "shopName": "临江深海料理",
+      "wmPoiScore": 47,
+      "monthSalesTip": "月售2041",
+      "picUrl": "http://p1.meituan.net/business/514c8c7bccc8d4e69105ca312319500f140071.png",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "38分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送 ¥0",
+      "shippingFeeTip": "配送 ¥1",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "2.5km",
+      "averagePriceTip": "",
+      "discounts2": [{
+        "info": "满10减2;满20减3;满30减3;",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }, {
+        "info": "折扣商品2折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }, {
+        "info": "领2元券",
+        "iconUrl": "http://p1.meituan.net/activityconfig/3fc360f1c726e7148380f4c77fa303fd1475.png",
+        "promotionType": 2,
+        "activityId": 103
+      }, {
+        "info": "实际支付15元返1元商家代金券",
+        "iconUrl": "http://p0.meituan.net/xianfu/652eea4034250563fe11b02e3219ba8d981.png",
+        "promotionType": 2,
+        "activityId": 100
+      }],
+      "address": "茂名市沿江路新湖北街318号商铺",
+      "shipping_time": "00:00-02:00,11:00-23:59"
+    }, {
+      "mtWmPoiId": "1023259973049107",
+      "shopName": "三小姐麻辣烫",
+      "wmPoiScore": 34,
+      "monthSalesTip": "月售560",
+      "picUrl": "http://p1.meituan.net/waimaipoi/0710fba828887c5162f693d23faa3d3313858.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "43分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥5",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "1.6km",
+      "averagePriceTip": "人均 ¥15",
+      "discounts2": [{
+        "info": "满5减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "人民北路528号大院17、18号首层19号房",
+      "shipping_time": "10:20-12:50,16:25-18:50"
+    }, {
+      "mtWmPoiId": "1086915683345532",
+      "shopName": "好滋味炖品店",
+      "wmPoiScore": 44,
+      "monthSalesTip": "月售4320",
+      "picUrl": "http://p0.meituan.net/waimaipoi/949d5e1795357f699f8b6646f77ef69c38551.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "20分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥8",
+      "shippingFeeTip": "配送 ¥0",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "1.5km",
+      "averagePriceTip": "",
+      "discounts2": [{
+        "info": "满10减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "文明北路二街208号",
+      "shipping_time": "09:30-12:45,15:55-18:45"
+    }, {
+      "mtWmPoiId": "973623035994323",
+      "shopName": "品味鲜",
+      "wmPoiScore": 41,
+      "monthSalesTip": "月售3083",
+      "picUrl": "http://p0.meituan.net/waimaipoi/7f0829f5cd5cc8a57b26b0118e982f2629537.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "12分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥5",
+      "shippingFeeTip": "配送 ¥0",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "5km",
+      "averagePriceTip": "",
+      "discounts2": [{
+        "info": "满10减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "茂名市官渡北供气站2栋A7号",
+      "shipping_time": "10:00-13:00,16:00-19:00"
+    }, {
+      "mtWmPoiId": "1093104731203387",
+      "shopName": "潮发煲仔饭",
+      "wmPoiScore": 43,
+      "monthSalesTip": "月售1600",
+      "picUrl": "http://p0.meituan.net/business/d43eae32f72ffc700037b0477ffa2a7925378.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "34分钟",
+      "deliveryType": 0,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥1.5",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "3.4km",
+      "averagePriceTip": "人均 ¥12",
+      "discounts2": [{
+        "info": "满8减1;满10减2;满20减3;",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }, {
+        "info": "折扣商品3.5折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }],
+      "address": "茂名市光华北路368号大院2、3号首层22号房",
+      "shipping_time": "08:00-23:00"
+    }, {
+      "mtWmPoiId": "884695738101859",
+      "shopName": "一芳台湾水果茶（东汇城店）",
+      "wmPoiScore": 45,
+      "monthSalesTip": "月售400",
+      "picUrl": "http://p1.meituan.net/waimaipoi/c11cf738ae00ec7a7bc6d9e9f432d1e9151453.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "15分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥2",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "2.1km",
+      "averagePriceTip": "人均 ¥8",
+      "discounts2": [{
+        "info": "满10减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "油城十路东汇城3楼",
+      "shipping_time": "10:00-22:00"
+    }, {
+      "mtWmPoiId": "1083376630265272",
+      "shopName": "稻香煲仔饭（茂名店）",
+      "wmPoiScore": 46,
+      "monthSalesTip": "月售1200",
+      "picUrl": "http://p1.meituan.net/waimaipoi/f25184a010e4842611c1c12b0cabe468712107.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "25分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥3",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "1.2km",
+      "averagePriceTip": "人均 ¥13",
+      "discounts2": [{
+        "info": "满5减1;满10减2;满50减10;满20减3;",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }, {
+        "info": "折扣商品1折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }, {
+        "info": "领5元券;领10元券;领15元券",
+        "iconUrl": "http://p1.meituan.net/activityconfig/3fc360f1c726e7148380f4c77fa303fd1475.png",
+        "promotionType": 2,
+        "activityId": 103
+      }, {
+        "info": "满10元赠送赠送可乐250豪升一支",
+        "iconUrl": "http://p0.meituan.net/activityconfig/dfb8be4fc2eb746ecbc4c1485dba635a1127.png",
+        "promotionType": 2,
+        "activityId": 5
+      }],
+      "address": "茂名市茂南区羊角镇南香新塘仔村83号首层（第一排第六栋）",
+      "shipping_time": "10:00-21:00"
+    }, {
+      "mtWmPoiId": "933727084790188",
+      "shopName": "欠茶",
+      "wmPoiScore": 43,
+      "monthSalesTip": "月售1003",
+      "picUrl": "http://p1.meituan.net/waimaipoi/25e45bf10a8edf4c13a261833d14011166795.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "35分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥2",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "5km",
+      "averagePriceTip": "人均 ¥8",
+      "discounts2": [{
+        "info": "满10减2",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }],
+      "address": "茂名市为民路48号商铺",
+      "shipping_time": "10:20-23:40"
+    }, {
+      "mtWmPoiId": "928087792704082",
+      "shopName": "韦小堡•炸鸡汉堡（茂名店）",
+      "wmPoiScore": 46,
+      "monthSalesTip": "月售500",
+      "picUrl": "https://p0.meituan.net/ziruzhu/e88eb05f145fe7d522855813d4d14769526247.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "42分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送 ¥10",
+      "shippingFeeTip": "配送 ¥5",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "5.2km",
+      "averagePriceTip": "人均 ¥20",
+      "discounts2": [{
+        "info": "满5减1;满10减2;满50减10;满20减3;",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }, {
+        "info": "折扣商品3.5折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }, {
+        "info": "本店支持开发票，开票金额100元起",
+        "iconUrl": "http://p0.meituan.net/xianfu/476ba65ee80b6385bab292c085baed17940.png",
+        "promotionType": 2,
+        "activityId": -2
+      }],
+      "address": "茂名市河东光华南路商场首层7、8号房门房第1间",
+      "shipping_time": "00:00-01:00,10:00-23:59"
+    }, {
+      "mtWmPoiId": "1108008267696186",
+      "shopName": "木桶饭",
+      "wmPoiScore": 47,
+      "monthSalesTip": "月售1501",
+      "picUrl": "http://p0.meituan.net/waimaipoi/f52a30c9d789992ca9c482d448476da753805.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "50分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送10",
+      "shippingFeeTip": "配送 ¥5",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "2km",
+      "averagePriceTip": "人均 ¥5",
+      "discounts2": [{
+        "info": "满10减1;满20减3",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }, {
+        "info": "折扣商品2折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }],
+      "address": "双山三路南一巷28栋",
+      "shipping_time": "10:00-20:15"
+    }, {
+      "mtWmPoiId": "962301502205895",
+      "shopName": "Uncle Two 二叔公「奶茶/小吃」",
+      "wmPoiScore": 47,
+      "monthSalesTip": "月售1420",
+      "picUrl": "http://p0.meituan.net/business/5c423987f67f8739166d3f8b15d083c0113166.jpg",
+      "poiTypeIcon": "",
+      "deliveryTimeTip": "35分钟",
+      "deliveryType": 1,
+      "minPriceTip": "起送20",
+      "shippingFeeTip": "配送 ¥0",
+      "origin_shipping_fee_tip": "",
+      "status": 1,
+      "statusDesc": "",
+      "distance": "4.2km",
+      "averagePriceTip": "人均 ¥15",
+      "discounts2": [{
+        "info": "满25减7;满10减1",
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
+        "promotionType": 2,
+        "activityId": 2
+      }, {
+        "info": "折扣商品1折起",
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png",
+        "promotionType": 2,
+        "activityId": 17
+      }],
+      "address": "茂名市双山四路南二巷1.3号楼7.8号铺位",
+      "shipping_time": "10:10-23:59"
+    }],
+    "judasData": {
+      "rankTraceId": "B06FB69B13B5F2A0B8C39D608803D382"
+    }
+  },
+  "code": 0,
+  "msg": "成功"
+}

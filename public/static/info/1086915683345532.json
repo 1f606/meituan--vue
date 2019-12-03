@@ -1,0 +1,43 @@
+{
+  "data": {
+    "activityList": [{
+      "actName": "",
+      "actDesc": "满20减2(在线支付专享)",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png"
+    }, {
+      "actName": "",
+      "actDesc": "该商家支持在线支付",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p1.meituan.net/xianfu/32200c3060be7903f62c9076308619ee734.png"
+    }],
+    "dpShopId": 0,
+    "invoiceMsg": "",
+    "invoiceSupport": 0,
+    "licencePics": [],
+    "poiQualificationInfo": {
+      "show": true,
+      "content": "查看食品安全档案",
+      "url": "https://i.waimai.meituan.com/c/foods_safe_doc/index.html?wm_poi_id=1086915683411068"
+    },
+    "mtWmPoiId": "1086915683411068",
+    "onlinePay": 1,
+    "overtimePaymentSupported": false,
+    "isBrand": 0,
+    "serTime": ["&#xf4cc;&#xf216;:&#xe5f1;&#xf4cc;-&#xe6db;&#xf3d0;:&#xec98;&#xf780;", "&#xe6db;&#xf780;:&#xf780;&#xf780;-&#xe6db;&#xe03a;:&#xec98;&#xf780;"],
+    "shopAddress": "文明北路二街36号",
+    "shopEnvTitle": "商家环境",
+    "shopName": "好滋味炖品店",
+    "shopPhone": ["13035835235", "13413306790"],
+    "shopReviewTitle": "点评评价",
+    "shopStar": 44,
+    "sold": "0",
+    "tip": "注意，注意。每天配送时间:上午10:50至13:00，下午16:50至19:00止。其它时间请自行下楼拿。",
+    "shopLat": 2.1673461E7,
+    "shopLng": 1.10932217E8
+  },
+  "code": 0,
+  "msg": "成功"
+}

@@ -1,0 +1,50 @@
+{
+  "data": {
+    "activityList": [{
+      "actName": "",
+      "actDesc": "满30减20;满50减24;满80减43;满118减56;(在线支付专享)",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png"
+    }, {
+      "actName": "",
+      "actDesc": "折扣商品3.5折起(在线支付专享)",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png"
+    }, {
+      "actName": "",
+      "actDesc": "该商家支持在线支付",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p1.meituan.net/xianfu/32200c3060be7903f62c9076308619ee734.png"
+    }],
+    "dpShopId": 0,
+    "invoiceMsg": "",
+    "invoiceSupport": 1,
+    "licencePics": [],
+    "poiQualificationInfo": {
+      "show": true,
+      "content": "查看食品安全档案",
+      "url": "https://i.waimai.meituan.com/c/foods_safe_doc/index.html?wm_poi_id=928087792769618"
+    },
+    "mtWmPoiId": "928087792769618",
+    "onlinePay": 1,
+    "overtimePaymentSupported": false,
+    "isBrand": 1,
+    "brandMsg": "该商户为品牌商户",
+    "serTime": ["&#xe065;&#xe065;:&#xe065;&#xe065;-&#xe065;&#xf6d2;:&#xe065;&#xe065;", "&#xf6d2;&#xe065;:&#xe065;&#xe065;-&#xf72d;&#xf508;:&#xeece;&#xf596;"],
+    "shopAddress": "茂名市河东光华南路商场首层38号房门房第5间",
+    "shopEnvTitle": "商家环境",
+    "shopName": "韦小堡•炸鸡汉堡（茂名店）",
+    "shopPhone": ["13686725592"],
+    "shopReviewTitle": "点评评价",
+    "shopStar": 46,
+    "sold": "0",
+    "tip": "如遇到恶劣天气，可能会导致送餐稍慢。请谅解谢谢٩(͡๏̯͡๏)۶，有问题请致电商家：13686725592",
+    "shopLat": 2.165573E7,
+    "shopLng": 1.10924444E8
+  },
+  "code": 0,
+  "msg": "成功"
+}

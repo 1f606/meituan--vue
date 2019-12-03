@@ -1,0 +1,43 @@
+{
+  "data": {
+    "activityList": [{
+      "actName": "",
+      "actDesc": "满5减1;满10减2;满15减3;满20减4;(在线支付专享)",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png"
+    }, {
+      "actName": "",
+      "actDesc": "该商家支持在线支付",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p1.meituan.net/xianfu/32200c3060be7903f62c9076308619ee734.png"
+    }],
+    "dpShopId": 0,
+    "invoiceMsg": "",
+    "invoiceSupport": 0,
+    "licencePics": [],
+    "poiQualificationInfo": {
+      "show": true,
+      "content": "查看食品安全档案",
+      "url": "https://i.waimai.meituan.com/c/foods_safe_doc/index.html?wm_poi_id=995578908806027"
+    },
+    "mtWmPoiId": "995578908806027",
+    "onlinePay": 1,
+    "overtimePaymentSupported": false,
+    "isBrand": 0,
+    "serTime": ["&#xeb61;&#xf2b3;:&#xf2b3;&#xeab6;-&#xeb61;&#xf77a;:&#xeab6;&#xeb61;", "&#xeb61;&#xf0be;:&#xeb61;&#xeab6;-&#xeb61;&#xeedb;:&#xeab6;&#xf2b3;"],
+    "shopAddress": "文明北路12号首层5号房",
+    "shopEnvTitle": "商家环境",
+    "shopName": "大师兄便当（学院店）",
+    "shopPhone": ["15976570202", "15767645696"],
+    "shopReviewTitle": "点评评价",
+    "shopStar": 44,
+    "sold": "0",
+    "tip": "欢迎光临大师兄便当！！！校区送餐时间早上11:00～13:00 。下午17:00～19:00。用心做好每一份餐，干净卫生是本店的宗旨，合不合口味您说了算！欢迎新老顾客光临并收藏本店，十分感谢！注…外面三楼以上不上楼！！",
+    "shopLat": 2.1673498E7,
+    "shopLng": 1.10931843E8
+  },
+  "code": 0,
+  "msg": "成功"
+}

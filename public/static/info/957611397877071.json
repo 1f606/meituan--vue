@@ -1,0 +1,43 @@
+{
+  "data": {
+    "activityList": [{
+      "actName": "",
+      "actDesc": "折扣商品3折起(在线支付专享)",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png"
+    }, {
+      "actName": "",
+      "actDesc": "该商家支持在线支付",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p1.meituan.net/xianfu/32200c3060be7903f62c9076308619ee734.png"
+    }],
+    "dpShopId": 0,
+    "invoiceMsg": "",
+    "invoiceSupport": 0,
+    "licencePics": [],
+    "poiQualificationInfo": {
+      "show": true,
+      "content": "查看食品安全档案",
+      "url": "https://i.waimai.meituan.com/c/foods_safe_doc/index.html?wm_poi_id=957611397942607"
+    },
+    "mtWmPoiId": "957611397942607",
+    "onlinePay": 1,
+    "overtimePaymentSupported": false,
+    "isBrand": 0,
+    "serTime": ["&#xe6db;&#xf4cc;:&#xe5f1;&#xf4cc;-&#xf3d0;&#xe5f1;:&#xe5f1;&#xf4cc;"],
+    "shopAddress": "茂名市光华北路25号大院1号首层15号房",
+    "shopEnvTitle": "商家环境",
+    "shopName": "华乐士",
+    "shopPhone": ["06682853226"],
+    "shopReviewTitle": "点评评价",
+    "shopStar": 43,
+    "sold": "0",
+    "tip": "亲爱的顾客，为了保证您的正常用餐，请提前下单。下单前请您再次确认地址和联系电话，以便我们能及时送达，感谢一路有您的支持！有任何问题可致电华乐士2853226",
+    "shopLat": 2.1677315E7,
+    "shopLng": 1.10924737E8
+  },
+  "code": 0,
+  "msg": "成功"
+}
