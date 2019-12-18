@@ -18,7 +18,7 @@
       "status": 1,
       "statusDesc": "",
       "distance": "1.4km",
-      "averagePriceTip": "",
+      "averagePriceTip": "人均 ¥15",
       "discounts2": [{
         "info": "满5减1;满10减2;满15减3;满20减4;",
         "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
@@ -42,7 +42,7 @@
       "status": 1,
       "statusDesc": "",
       "distance": "3.6km",
-      "averagePriceTip": "",
+      "averagePriceTip": "人均 ¥13",
       "discounts2": [{
         "info": "满5减1",
         "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
@@ -66,7 +66,7 @@
       "status": 1,
       "statusDesc": "",
       "distance": "5.4km",
-      "averagePriceTip": "",
+      "averagePriceTip": "人均 ¥9",
       "discounts2": [{
         "info": "满10减1",
         "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
@@ -114,7 +114,7 @@
       "status": 1,
       "statusDesc": "",
       "distance": "2.5km",
-      "averagePriceTip": "",
+      "averagePriceTip": "人均 ¥6.5",
       "discounts2": [{
         "info": "满10减2;满20减3;满30减3;",
         "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
@@ -177,7 +177,7 @@
       "status": 1,
       "statusDesc": "",
       "distance": "1.5km",
-      "averagePriceTip": "",
+      "averagePriceTip": "人均 ¥24",
       "discounts2": [{
         "info": "满10减1",
         "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",
@@ -201,7 +201,7 @@
       "status": 1,
       "statusDesc": "",
       "distance": "5km",
-      "averagePriceTip": "",
+      "averagePriceTip": "人均 ¥12",
       "discounts2": [{
         "info": "满10减1",
         "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png",

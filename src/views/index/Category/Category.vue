@@ -2,18 +2,18 @@
   <div class="category">
     <div class="category-title">附近商家</div>
     <div :class="[isFilterFixed ? 'category-filter--fixed' : 'category-filter']" >
-      <div @click="toggleSort" :class="{'category-filter_mainFilter': true, 'upArrow': isSortShow, 'downArrow': !isSortShow}">综合排序</div>
-      <div class="category-filter_volumeFilter">销量最高</div>
-      <div class="category-filter_distanceFilter">距离最近</div>
+      <div @click="toggleSort" v-text="mainFilterText" :class="{'category-filter_mainFilter': true, 'upArrow': isSortShow, 'downArrow': !isSortShow}"></div>
+      <div @click="sortAndHighlight('monthSalesTip', '销量最高', 1, 1)" class="category-filter_volumeFilter">销量最高</div>
+      <div @click="sortAndHighlight('distance', '距离最近', -1, 1)" class="category-filter_distanceFilter">距离最近</div>
       <div class="category-filter_customFilter">筛选</div>
       <ul class="category-filter_sort" v-show="isSortShow">
-        <li class="category-filter_item">综合排序</li>
-        <li class="category-filter_item">速度最快</li>
-        <li @click="sort('wmPoiScore')" class="category-filter_item">评分最高</li>
-        <li class="category-filter_item">起送价最低</li>
-        <li class="category-filter_item">配送费最低</li>
-        <li class="category-filter_item">人均高到低</li>
-        <li class="category-filter_item">人均低到高</li>
+        <li @click="sort('wmPoiScore', '综合排序', 1, 0)" class="category-filter_item">综合排序</li>
+        <li @click="sort('deliveryTimeTip', '速度最快', -1, 1)" class="category-filter_item">速度最快</li>
+        <li @click="sort('wmPoiScore', '评分最高', 1, 0)" class="category-filter_item">评分最高</li>
+        <li @click="sort('minPriceTip', '起送价最低', -1, 1)" class="category-filter_item">起送价最低</li>
+        <li @click="sort('shippingFeeTip', '配送费最低', -1, 1)" class="category-filter_item">配送费最低</li>
+        <li @click="sort('averagePriceTip', '人均高到低', 1, 1)" class="category-filter_item">人均高到低</li>
+        <li @click="sort('averagePriceTip', '人均低到高', -1, 1)" class="category-filter_item">人均低到高</li>
       </ul>
     </div>
     <transition name="fade">
@@ -71,19 +71,78 @@ export default {
   data () {
     return {
       isFilterFixed: false,
-      isSortShow: false
+      isSortShow: false,
+      mainFilterText: '综合排序'
     }
   },
   mounted () {
     window.addEventListener('scroll', this.changeIsFilterShow)
   },
   methods: {
-    sort (key) {
-      this.categoryList.sort((a, b) => {
-        let score1 = a[key]
-        let score2 = b[key]
-        return score2 - score1
-      })
+    sortAndHighlight (key, text, symbol, needRegexp) {
+      if (symbol === 1) {
+        this.categoryList.sort((a, b) => {
+          if (needRegexp) {
+            let reg = /\d{1,5}\.?\d?/
+            let score1 = a[key].match(reg)
+            let score2 = b[key].match(reg)
+            return score2 - score1
+          } else {
+            let score1 = a[key]
+            let score2 = b[key]
+            return score2 - score1
+          }
+        })
+      } else {
+        this.categoryList.sort((a, b) => {
+          if (needRegexp) {
+            let reg = /\d{1,5}\.?\d?/
+            let score1 = a[key].match(reg)
+            let score2 = b[key].match(reg)
+            return score1 - score2
+          } else {
+            let score1 = a[key]
+            let score2 = b[key]
+            return score1 - score2
+          }
+        })
+      }
+    },
+    /**
+     *
+     * @param key String equals the key in 'homelist.json'
+     * @param text String used to change the text of 'mainFilter'
+     * @param symbol Number if it's smaller than 0, sort a an lower index than b
+     */
+    sort (key, text, symbol, needRegexp) {
+      this.mainFilterText = text
+      if (symbol === 1) {
+        this.categoryList.sort((a, b) => {
+          if (needRegexp) {
+            let reg = /\d{1,5}\.?\d?/
+            let score1 = a[key].match(reg)
+            let score2 = b[key].match(reg)
+            return score2 - score1
+          } else {
+            let score1 = a[key]
+            let score2 = b[key]
+            return score2 - score1
+          }
+        })
+      } else {
+        this.categoryList.sort((a, b) => {
+          if (needRegexp) {
+            let reg = /\d{1,5}\.?\d?/
+            let score1 = a[key].match(reg)
+            let score2 = b[key].match(reg)
+            return score1 - score2
+          } else {
+            let score1 = a[key]
+            let score2 = b[key]
+            return score1 - score2
+          }
+        })
+      }
       this.isSortShow = false
       document.removeEventListener('touchmove', this.banScroll)
       document.removeEventListener('mousewheel', this.banScroll)

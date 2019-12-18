@@ -1,11 +1,11 @@
 module.exports = {
-  // devServer: {
-  //   proxyTable: {
-  //     '/api': {
-  //       target: '47.101.159.14'
-  //     }
-  //   }
-  // },
+  devServer: {
+    proxyTable: {
+      '/api': {
+        target: '47.101.159.14'
+      }
+    }
+  },
   publicPath: './',
   css: {
     loaderOptions: {
