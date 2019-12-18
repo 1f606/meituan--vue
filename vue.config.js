@@ -1,14 +1,11 @@
 module.exports = {
-  devServer: {
-    proxyTable: {
-      '/api': {
-        target: '47.101.159.14'
-        // pathRewrite: {
-        //   '^/api': '/static/mock'
-        // }
-      }
-    }
-  },
+  // devServer: {
+  //   proxyTable: {
+  //     '/api': {
+  //       target: '47.101.159.14'
+  //     }
+  //   }
+  // },
   publicPath: './',
   css: {
     loaderOptions: {

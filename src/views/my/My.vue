@@ -42,39 +42,39 @@ export default {
     background-color: #f0f0f0;
   }
   .my-header {
-    padding: px2rem(37px) 0 px2rem(18px);
+    padding: 37px 0 18px;
     background-image: url("http://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:9096d347/78890a8f1859bc10152151fc64aff5cc.png");
   }
   .my-header_pic {
     display: block;
-    width: px2rem(82px);
-    height: px2rem(82px);
+    width: 82px;
+    height: 82px;
     margin: 0 auto;
   }
   .my-header_nickName {
-    margin-top: px2rem(8px);
-    font-size: px2rem(16px);
+    margin-top: 8px;
+    font-size: 16px;
     text-align: center;
   }
 
   .my-content {
-    font-size: px2rem(14px);
+    font-size: 14px;
     background-color: #fff;
   }
   .my-content_items li {
     position: relative;
-    padding: px2rem(10px) 0 px2rem(10px) px2rem(25px);
-    margin-left: px2rem(10px);
-    line-height: px2rem(20px);
+    padding: 10px 0 10px 25px;
+    margin-left: 10px;
+    line-height: 20px;
     border-bottom: 1px solid #e3e3e3;
   }
   .my-content_items li:after {
     content: '>';
     position: absolute;
     right: 0;
-    width: px2rem(10px);
-    height: px2rem(25px);
-    margin-right: px2rem(22px);
+    width: 10px;
+    height: 25px;
+    margin-right: 22px;
     color: #aaa;
     transform: scale(1.5);
   }
@@ -84,9 +84,9 @@ export default {
     left: 0;
     top: 50%;
     display: block;
-    width: px2rem(15px);
-    height: px2rem(15px);
-    margin-top: px2rem(-7px);
+    width: 15px;
+    height: 15px;
+    margin-top: -7px;
     background-size: cover;
   }
   .my-content_address:before {
@@ -109,13 +109,13 @@ export default {
   }
 
   .my-content-service {
-    height: px2rem(234px);
-    padding-top: px2rem(20px);
-    margin-bottom: px2rem(50px);
+    height: 234px;
+    padding-top: 20px;
+    margin-bottom: 50px;
     background-color: #f0f0f0;
   }
   .my-content_tel {
-    padding: px2rem(10px) 0;
+    padding: 10px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     text-align: center;
@@ -123,9 +123,9 @@ export default {
     background-color: #fff;
   }
   .my-content_time {
-    padding-top: px2rem(10px);
+    padding-top: 10px;
     text-align: center;
     color: #999;
-    font-size: px2rem(12px);
+    font-size: 12px;
   }
 </style>

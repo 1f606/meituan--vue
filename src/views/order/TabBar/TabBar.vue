@@ -32,14 +32,14 @@ export default {
   .tabBar_item {
     float: left;
     width: 33.333333%;
-    height: px2rem(50px);
+    height: 50px;
     color: #999;
-    font-size: px2rem(12px);
+    font-size: 12px;
     text-align: center;
     .tabBar_icon {
-      width: px2rem(30px);
-      height: px2rem(30px);
-      margin-top: px2rem(2px);
+      width: 30px;
+      height: 30px;
+      margin-top: 2px;
       background-size: contain;
       display: inline-block;
     }

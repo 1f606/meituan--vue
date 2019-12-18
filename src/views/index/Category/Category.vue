@@ -1,20 +1,26 @@
 <template>
   <div class="category">
-    <div v-show="isFilterShow" class="category-filter--fixed" >
-      <div class="category-filter_mainFilter">综合排序</div>
-      <div class="category-filter_volumeFilter">销量最高</div>
-      <div class="category-filter_distanceFilter">距离最近</div>
-      <div class="category-filter_customFilter">筛选</div>
-    </div>
     <div class="category-title">附近商家</div>
-    <div class="category-filter" >
-      <div class="category-filter_mainFilter">综合排序</div>
+    <div :class="[isFilterFixed ? 'category-filter--fixed' : 'category-filter']" >
+      <div @click="toggleSort" :class="{'category-filter_mainFilter': true, 'upArrow': isSortShow, 'downArrow': !isSortShow}">综合排序</div>
       <div class="category-filter_volumeFilter">销量最高</div>
       <div class="category-filter_distanceFilter">距离最近</div>
       <div class="category-filter_customFilter">筛选</div>
+      <ul class="category-filter_sort" v-show="isSortShow">
+        <li class="category-filter_item">综合排序</li>
+        <li class="category-filter_item">速度最快</li>
+        <li @click="sort(rate)" class="category-filter_item">评分最高</li>
+        <li class="category-filter_item">起送价最低</li>
+        <li class="category-filter_item">配送费最低</li>
+        <li class="category-filter_item">人均高到低</li>
+        <li class="category-filter_item">人均低到高</li>
+      </ul>
     </div>
-    <ul @click="_handleCategoryItemClick(item.mtWmPoiId)" class="category-list" v-for="(item, index) in categoryList" :key="index">
-      <li class="category-list_item">
+    <transition name="fade">
+      <div @click="hideSort" class="mask" v-show="isSortShow"></div>
+    </transition>
+    <ul>
+      <li class="category-list_item" @click="_handleCategoryItemClick(item.mtWmPoiId)" v-for="(item, index) in categoryList" :key="index">
         <div class="category-list_logoWrapper">
           <img :src="item.picUrl" alt="" class="category-list_logo">
         </div>
@@ -64,19 +70,40 @@ export default {
   },
   data () {
     return {
-      isFilterShow: false
+      isFilterFixed: false,
+      isSortShow: false
     }
   },
   mounted () {
     window.addEventListener('scroll', this.changeIsFilterShow)
   },
   methods: {
+    sort () {
+      this.categoryList.sort((a, b) => {
+        return a - b
+      })
+    },
+    toggleSort () {
+      document.documentElement.scrollTop = 188
+      if (!this.isSortShow) {
+        document.addEventListener('touchmove', this.banScroll, false)
+        document.addEventListener('mousewheel', this.banScroll, false)
+      }
+      if (this.isSortShow) {
+        document.removeEventListener('touchmove', this.banScroll)
+        document.removeEventListener('mousewheel', this.banScroll)
+      }
+      this.isSortShow = !this.isSortShow
+    },
+    hideSort () {
+      this.isSortShow = false
+    },
     changeIsFilterShow () {
       let top = document.documentElement.scrollTop
-      if (top > 230) {
-        this.isFilterShow = true
+      if (top >= 187.2) {
+        this.isFilterFixed = true
       } else {
-        this.isFilterShow = false
+        this.isFilterFixed = false
       }
     },
     _handleCategoryItemClick (id) {
@@ -86,12 +113,24 @@ export default {
           id: id
         }
       })
+    },
+    banScroll (event) {
+      event.preventDefault()
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+  .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
   .category {
     padding-bottom: 50px;
   }
@@ -133,7 +172,7 @@ export default {
     left: 0;
     right: 0;
     margin-top: 50px;
-    z-index: 9;
+    z-index: 200;
   }
   .category-filter div, .category-filter--fixed div {
     width: 25%;
@@ -146,13 +185,28 @@ export default {
     color: #666;
     background-color: #fff;
   }
+  .category-filter_sort {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    .category-filter_item {
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      text-indent: 15px;
+      color: #666;
+    }
+  }
   .category-filter_mainFilter {
     position: relative;
     color: #333;
   }
-  .category-filter_mainFilter:after {
+  .downArrow:after {
     position: absolute;
-    top: 40%;
+    top: 38%;
     right: 5px;
     content: '';
     display: block;
@@ -160,7 +214,21 @@ export default {
     height: 5px;
     border-top: 1px solid #666;
     border-left: 1px solid #666;
+    transition: all 0.1s linear;
     transform: rotateZ(-135deg);
+  }
+  .upArrow:after {
+    position: absolute;
+    top: 38%;
+    right: 5px;
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    transition: all 0.1s linear;
+    transform: rotateZ(45deg);
   }
 
   .category-list_item {
@@ -225,5 +293,8 @@ export default {
   }
   .category-list_promContent {
     display: inline-block;
+  }
+  .category-filter_item {
+    position: relative;
   }
 </style>
