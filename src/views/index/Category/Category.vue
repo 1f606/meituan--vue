@@ -9,7 +9,7 @@
       <ul class="category-filter_sort" v-show="isSortShow">
         <li class="category-filter_item">综合排序</li>
         <li class="category-filter_item">速度最快</li>
-        <li @click="sort(rate)" class="category-filter_item">评分最高</li>
+        <li @click="sort('wmPoiScore')" class="category-filter_item">评分最高</li>
         <li class="category-filter_item">起送价最低</li>
         <li class="category-filter_item">配送费最低</li>
         <li class="category-filter_item">人均高到低</li>
@@ -78,16 +78,21 @@ export default {
     window.addEventListener('scroll', this.changeIsFilterShow)
   },
   methods: {
-    sort () {
+    sort (key) {
       this.categoryList.sort((a, b) => {
-        return a - b
+        let score1 = a[key]
+        let score2 = b[key]
+        return score2 - score1
       })
+      this.isSortShow = false
+      document.removeEventListener('touchmove', this.banScroll)
+      document.removeEventListener('mousewheel', this.banScroll)
     },
     toggleSort () {
       document.documentElement.scrollTop = 188
       if (!this.isSortShow) {
-        document.addEventListener('touchmove', this.banScroll, false)
-        document.addEventListener('mousewheel', this.banScroll, false)
+        document.addEventListener('touchmove', this.banScroll, { passive: false })
+        document.addEventListener('mousewheel', this.banScroll, { passive: false })
       }
       if (this.isSortShow) {
         document.removeEventListener('touchmove', this.banScroll)
