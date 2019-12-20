@@ -80,8 +80,8 @@ export default {
   .toast-content {
     position: relative;
     box-sizing: border-box;
-    width: 84vw;
-    height: 59vh;
+    max-width: 64vw;
+    max-height: 78vh;
     z-index: 1;
   }
   .toast-content_food {
@@ -89,7 +89,7 @@ export default {
   }
   .toast-content_img {
     width: 100%;
-    height: 35vh;
+    height: 32vh;
   }
   .toast-content_name {
     height: 20px;

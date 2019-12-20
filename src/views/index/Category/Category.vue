@@ -1,20 +1,22 @@
 <template>
   <div class="category">
     <div class="category-title">附近商家</div>
-    <div :class="[isFilterFixed ? 'category-filter--fixed' : 'category-filter']" >
+    <div :class="[isFilterFixed ? 'category-filter--fixed' : 'category-filter']">
       <div @click="toggleSort" v-text="mainFilterText" :class="{'category-filter_mainFilter': true, 'upArrow': isSortShow, 'downArrow': !isSortShow}"></div>
-      <div @click="sortAndHighlight('monthSalesTip', '销量最高', 1, 1)" class="category-filter_volumeFilter">销量最高</div>
-      <div @click="sortAndHighlight('distance', '距离最近', -1, 1)" class="category-filter_distanceFilter">距离最近</div>
-      <div class="category-filter_customFilter">筛选</div>
-      <ul class="category-filter_sort" v-show="isSortShow">
-        <li @click="sort('wmPoiScore', '综合排序', 1, 0)" class="category-filter_item">综合排序</li>
-        <li @click="sort('deliveryTimeTip', '速度最快', -1, 1)" class="category-filter_item">速度最快</li>
-        <li @click="sort('wmPoiScore', '评分最高', 1, 0)" class="category-filter_item">评分最高</li>
-        <li @click="sort('minPriceTip', '起送价最低', -1, 1)" class="category-filter_item">起送价最低</li>
-        <li @click="sort('shippingFeeTip', '配送费最低', -1, 1)" class="category-filter_item">配送费最低</li>
-        <li @click="sort('averagePriceTip', '人均高到低', 1, 1)" class="category-filter_item">人均高到低</li>
-        <li @click="sort('averagePriceTip', '人均低到高', -1, 1)" class="category-filter_item">人均低到高</li>
-      </ul>
+      <div @click="sortAndHighlight('monthSalesTip', '销量最高', 1, 1)">销量最高</div>
+      <div @click="sortAndHighlight('distance', '距离最近', -1, 1)" >距离最近</div>
+      <div>筛选</div>
+      <span class="placeholder">
+        <ul class="category-filter_sort" v-show="isSortShow">
+          <li @click="sort('wmPoiScore', '综合排序', 1, 0)" class="category-filter_item">综合排序</li>
+          <li @click="sort('deliveryTimeTip', '速度最快', -1, 1)" class="category-filter_item">速度最快</li>
+          <li @click="sort('wmPoiScore', '评分最高', 1, 0)" class="category-filter_item">评分最高</li>
+          <li @click="sort('minPriceTip', '起送价最低', -1, 1)" class="category-filter_item">起送价最低</li>
+          <li @click="sort('shippingFeeTip', '配送费最低', -1, 1)" class="category-filter_item">配送费最低</li>
+          <li @click="sort('averagePriceTip', '人均高到低', 1, 1)" class="category-filter_item">人均高到低</li>
+          <li @click="sort('averagePriceTip', '人均低到高', -1, 1)" class="category-filter_item">人均低到高</li>
+        </ul>
+      </span>
     </div>
     <transition name="fade">
       <div @click="hideSort" class="mask" v-show="isSortShow"></div>
@@ -149,6 +151,7 @@ export default {
     },
     toggleSort () {
       document.documentElement.scrollTop = 188
+      document.body.scrollTop = 188
       if (!this.isSortShow) {
         document.addEventListener('touchmove', this.banScroll, { passive: false })
         document.addEventListener('mousewheel', this.banScroll, { passive: false })
@@ -157,10 +160,14 @@ export default {
         document.removeEventListener('touchmove', this.banScroll)
         document.removeEventListener('mousewheel', this.banScroll)
       }
-      this.isSortShow = !this.isSortShow
+      this.$nextTick(() => {
+        this.isSortShow = !this.isSortShow
+      })
     },
     hideSort () {
       this.isSortShow = false
+      document.removeEventListener('touchmove', this.banScroll)
+      document.removeEventListener('mousewheel', this.banScroll)
     },
     changeIsFilterShow () {
       let top = document.documentElement.scrollTop
@@ -191,7 +198,7 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 50px;
+    top: 320px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
   }
@@ -227,6 +234,7 @@ export default {
 
   .category-filter {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .category-filter--fixed {
@@ -236,7 +244,7 @@ export default {
     left: 0;
     right: 0;
     margin-top: 50px;
-    z-index: 200;
+    z-index: 999;
   }
   .category-filter div, .category-filter--fixed div {
     width: 25%;
@@ -250,12 +258,12 @@ export default {
     background-color: #fff;
   }
   .category-filter_sort {
-    position: absolute;
-    width: 100%;
-    top: 40px;
+    position: fixed;
+    top: 92px;
     left: 0;
     right: 0;
     background-color: #fff;
+    z-index: 999;
     .category-filter_item {
       height: 40px;
       line-height: 40px;
@@ -267,6 +275,9 @@ export default {
   .category-filter_mainFilter {
     position: relative;
     color: #333;
+  }
+  .placeholder {
+    position: relative;
   }
   .downArrow:after {
     position: absolute;
@@ -357,8 +368,5 @@ export default {
   }
   .category-list_promContent {
     display: inline-block;
-  }
-  .category-filter_item {
-    position: relative;
   }
 </style>

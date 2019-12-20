@@ -45,12 +45,12 @@
             </div>
           </div>
           <Toast :item="this.selectedItem" ref="toast"></Toast>
-          <ShopCart :selectedFoods="this.selectedFoods" :info="this.info" ref="shopCart"></ShopCart>
         </div>
         <Comment :id="this.id"></Comment>
         <ShopInfo :shopInfo="this.shopInfo"></ShopInfo>
       </div>
     </div>
+    <ShopCart :selectedFoods="this.selectedFoods" :info="this.info" ref="shopCart"></ShopCart>
   </div>
 </template>
 
@@ -195,6 +195,7 @@ export default {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
   }
   .goods-info {
     height: 130px;
@@ -278,7 +279,7 @@ export default {
   }
   .shop-nav {
     display: flex;
-    height: 6vh;
+    height: 40px;
     border-bottom: 1px solid #eee;
   }
   .shop-nav_item {
@@ -309,6 +310,7 @@ export default {
     left: 0;
     top: 0;
     display: flex;
+    height: 4.96rem;
     overflow: hidden;
   }
   .goods-list_wrapper--menu {

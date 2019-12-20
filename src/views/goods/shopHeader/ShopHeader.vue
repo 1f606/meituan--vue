@@ -37,7 +37,6 @@ export default {
 
 <style lang="scss" scoped>
   .shop-header {
-    height: 21vh;
     max-height: 130px;
     background-color: #333;
   }
