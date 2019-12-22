@@ -278,6 +278,7 @@ export default {
     overflow: hidden;
   }
   .shop-nav {
+    flex: 0 0 auto;
     display: flex;
     height: 40px;
     border-bottom: 1px solid #eee;
@@ -292,16 +293,15 @@ export default {
   }
 
   .shop-swiperContent {
-    position: relative;
     display: flex;
-    width: 100%;
     height: 100%;
-    transition: all .5s linear;
+    transition: all 0.5s linear;
   }
   .goods {
     flex: 0 0 auto;
-    width: 100%;
-    height: 496px;
+    position: relative;
+    width: 100vw;
+    height: 100%;
   }
   .goods-list {
     position: absolute;
@@ -310,7 +310,6 @@ export default {
     left: 0;
     top: 0;
     display: flex;
-    height: 4.96rem;
     overflow: hidden;
   }
   .goods-list_wrapper--menu {
@@ -349,10 +348,12 @@ export default {
     padding: 0 10px 0;
   }
   .goods-list_content--menu {
+    position: absolute;
     padding-bottom: 50px;
     width: 100%;
   }
   .goods-list_content--dishes {
+    position: absolute;
     padding-bottom: 50px;
     width: 100%;
   }

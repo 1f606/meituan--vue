@@ -41,7 +41,8 @@ export default {
 <style lang="scss" scoped>
   .info {
     flex: 0 0 auto;
-    width: 375px;
+    width: 100vw;
+    height: 100%;
     font-size: 16px;
   }
   .info-itemWrapper {
