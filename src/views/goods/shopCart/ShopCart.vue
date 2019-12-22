@@ -3,7 +3,7 @@
     <transition name="fade">
       <div @click="hideFoodList" class="mask" v-show="isFoodListShow"></div>
     </transition>
-    <div class="shopCart-alert--outside" v-show="this.totalPrice > this.info.minFee">已满足起送价</div>
+<!--    <div class="shopCart-alert&#45;&#45;outside" v-show="this.totalPrice > this.info.minFee">已满足起送价</div>-->
     <div @click="showFoodList" class="shopCart_content--left">
       <div class="shopCart_icon" :class="iconClass">
         <div class="shopCart_bubble" v-show="this.totalCount > 0">{{this.totalCount}}</div>
@@ -18,7 +18,7 @@
         <div :class="deliveryClass">另需配送费¥{{this.info.minFee}}</div>
       </div>
     </div>
-    <div class="shopCart_content--right">
+    <div @clikc="clearSelectedFoods" class="shopCart_content--right">
       <div @click="pay" class="shopCart_payment" :class="paymentClass">{{this.paymentDesc}}</div>
     </div>
     <transition-group name="drop"
@@ -358,7 +358,7 @@ export default {
     position: relative;
     right: 0;
     bottom: -11px;
-    min-width: 88px;
+    min-width: 108px;
   }
   .mask {
     position: fixed;

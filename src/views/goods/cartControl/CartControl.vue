@@ -58,9 +58,11 @@ export default {
   }
   .cartControl-total {
     display: inline-block;
+    width: 20px;
     margin: 0 10px 0;
     vertical-align: bottom;
     font-size: 16px;
+    text-align: center;
     color: #333;
   }
   .cartControl-plus {

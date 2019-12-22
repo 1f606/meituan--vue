@@ -111,7 +111,7 @@ export default {
   /*其他(animation, transition等)*/
   .comment {
     flex: 0 0 auto;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
