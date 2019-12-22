@@ -44,13 +44,13 @@
               </ul>
             </div>
           </div>
+          <ShopCart :selectedFoods="this.selectedFoods" :info="this.info" ref="shopCart"></ShopCart>
           <Toast :item="this.selectedItem" ref="toast"></Toast>
         </div>
         <Comment :id="this.id"></Comment>
         <ShopInfo :shopInfo="this.shopInfo"></ShopInfo>
       </div>
     </div>
-    <ShopCart :selectedFoods="this.selectedFoods" :info="this.info" ref="shopCart"></ShopCart>
   </div>
 </template>
 
