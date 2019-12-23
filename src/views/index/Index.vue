@@ -35,7 +35,7 @@ export default {
       // console.log(data)
     })
     axios.get('/static/homelist.json').then(res => {
-      console.log(res)
+      // console.log(res)
       let data = res.data.data
       this.homeList = data.shopList
       // console.log(this.homeList)

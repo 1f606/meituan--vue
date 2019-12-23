@@ -1,8 +1,8 @@
 <template>
   <div class="category">
     <div class="category-title">附近商家</div>
-    <div :class="[isFilterFixed ? 'category-filter--fixed' : 'category-filter']">
-      <div @click="toggleSort" v-text="mainFilterText" :class="{'category-filter_mainFilter': true, 'upArrow': isSortShow, 'downArrow': !isSortShow}"></div>
+    <div :class="[isFilterFixed ? 'category-filter--fixed' : 'category-filter']" ref="filter">
+      <div @click="toggleSort" v-text="mainFilterText" :class="mainFilterClass"></div>
       <div @click="sortAndHighlight('monthSalesTip', '销量最高', 1, 1)">销量最高</div>
       <div @click="sortAndHighlight('distance', '距离最近', -1, 1)" >距离最近</div>
       <div>筛选</div>
@@ -74,13 +74,32 @@ export default {
     return {
       isFilterFixed: false,
       isSortShow: false,
-      mainFilterText: '综合排序'
+      mainFilterText: '综合排序',
+      isMainFilterHighlight: true
+    }
+  },
+  computed: {
+    mainFilterClass: function () {
+      return {
+        'category-filter_mainFilter': true,
+        'upArrow': this.isSortShow,
+        'downArrow': !this.isSortShow,
+        'highlight': this.isMainFilterHighlight
+      }
     }
   },
   mounted () {
     window.addEventListener('scroll', this.changeIsFilterShow)
   },
   methods: {
+    highlight (event) {
+      let children = this.$refs.filter.childNodes
+      this.isMainFilterHighlight = false
+      children[1].className = ''
+      children[2].className = ''
+      event.srcElement.className = 'highlight'
+      this.mainFilterText = '综合排序'
+    },
     sortAndHighlight (key, text, symbol, needRegexp) {
       if (symbol === 1) {
         this.categoryList.sort((a, b) => {
@@ -109,12 +128,15 @@ export default {
           }
         })
       }
+      this.hideSort()
+      this.highlight(event)
     },
     /**
      *
      * @param key String equals the key in 'homelist.json'
      * @param text String used to change the text of 'mainFilter'
      * @param symbol Number if it's smaller than 0, sort a an lower index than b
+     * @param needRegexp 1 => need
      */
     sort (key, text, symbol, needRegexp) {
       this.mainFilterText = text
@@ -148,6 +170,7 @@ export default {
       this.isSortShow = false
       document.removeEventListener('touchmove', this.banScroll)
       document.removeEventListener('mousewheel', this.banScroll)
+      this.isMainFilterHighlight = true
     },
     toggleSort () {
       document.documentElement.scrollTop = 188
@@ -163,6 +186,7 @@ export default {
       this.$nextTick(() => {
         this.isSortShow = !this.isSortShow
       })
+      this.highlight()
     },
     hideSort () {
       this.isSortShow = false
@@ -256,6 +280,7 @@ export default {
     line-height: 40px;
     color: #666;
     background-color: #fff;
+    cursor:default
   }
   .category-filter_sort {
     position: fixed;
@@ -368,5 +393,8 @@ export default {
   }
   .category-list_promContent {
     display: inline-block;
+  }
+  .highlight {
+    color: #333 !important;
   }
 </style>
